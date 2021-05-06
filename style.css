@@ -1,5 +1,53 @@
-body {
-  background-color: lime;
+.circle-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 10px;
 }
-=======
-  
+
+.icon {
+  position: absolute;
+  color: #fff;
+  font-size: 55px;
+  top: 55px;
+  left: 55px;
+  transform: translate(-25%, -25%);
+}
+
+.circle {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 48% 52% 58% 42% / 38% 45% 55% 62%;
+  padding: 2.5px;
+  background-clip: content-box;
+  border: 2.5px solid transparent;
+}
+
+.circle-wrapper:hover .circle {
+  border-color: teal;
+  animation: spin 0.5s linear 2 alternate;
+}
+
+.pic {
+  display: block;
+  border-radius: 48% 52% 58% 42% / 38% 45% 55% 62%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page-wrapper {
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
