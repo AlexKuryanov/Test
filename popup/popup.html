@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup JavaScript</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./fonts.css" />
+  <link rel="stylesheet" href="./popup.css" />
+</head>
+
+<body class="body">
+  <header class="header">
+    <button class="popup-btn">Log in</button>
+    <button class="popup-btn">Sign in</button>
+  </header>
+  <div class="popup-bg">
+    <div class="popup-wrap">
+      <div class="popup-header">
+        <img src="../assets/images/logo.svg" alt="" class="popup-logo" />
+      </div>
+      <div class="title-wrap">
+        <div class="popup-sign-in">
+          <h2 class="popup-title active">Create account</h2>
+        </div>
+        <div class="popup-log-in">
+          <h2 class="popup-title">Log in</h2>
+        </div>
+      </div>
+      <div class="social-wrap">
+        <button class="google-btn">Google Sign in</button>
+        <button class="facebook-btn">Facebook Sign in</button>
+      </div>
+      <form action="/" class="popup-form">
+        <div class="input-wrap">
+          <label for="username" class="popup-label">Name</label>
+          <div class="input">
+            <input class="popup-input" type="text" name="username" id="username">
+          </div>
+          
+        </div>
+        <div class="input-wrap">
+          <label for="useremail" class="popup-label">Email</label>
+          <div class="input">
+            <input class="popup-input" type="text" name="useremail" id="useremail">
+          </div>
+          
+        </div>
+        <div class="input-wrap">
+          <label for="password" class="popup-label">Password</label>
+          <div class="input">
+            <input class="popup-input" type="password" name="password" id="password">
+          </div>
+          
+        </div>
+        <div class="input-wrap">          
+          <input class="checkbox" type="checkbox" name="agreement" id="agreement">
+          <label for="agreement" class="popup-label checkbox-label">Agree with the <a href="#!" class="popup-link">User Agreement</a> and <a href="#!" class="popup-link">Privacy Policy</a></label>
+        </div>
+        <button class="submit-btn">Send</button>
+      </form>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
