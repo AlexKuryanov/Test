@@ -55,3 +55,44 @@
 h1 {
    padding: 10px 20px; margin: 30px; border: 5px solid #040;
 }
+
+/* div {
+  counter-reset: number;
+}
+p::before {
+  counter-increment: number;
+  content: "Number " counter(number)" ";
+}
+ */
+
+ .container {
+   display: flex;
+   flex-flow: column wrap;
+   height: 50vh;
+ }
+
+ .box {
+   width: 75%;
+   min-height: 10vh;
+  margin-bottom: 20px;
+ }
+.box1 {
+  background-color: lightskyblue;
+  width: 25%;
+  height: 100%;
+}
+
+.box2 {
+  background-color: mediumaquamarine;
+  min-height: 25%;
+}
+
+.box3 {
+  background-color: navajowhite;
+  min-height: 15%;
+}
+
+.box4 {
+  background-color: orchid;
+  min-height: calc(100%-40%-60px);
+}
